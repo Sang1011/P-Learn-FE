@@ -1,0 +1,86 @@
+.footer {
+    background-color: var(--footerBgColor);
+    color: var(--footerTextColor);
+    width: 100%;
+    min-height: 200px;
+    &__up{
+        border-bottom: 1px solid var(--borderColor);
+        &--content{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            h4 {
+                padding: 10px;
+            }
+            .img {
+                padding: 30px;
+                height: auto;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+    &__down{
+        border-bottom: 1px solid var(--borderColor);
+        &--content{
+            padding: 2% 10%;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            &.A{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                .up{
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 5px;
+                    margin-bottom: 10px;
+                    h5{
+                        line-height: 100%;
+                        color: white;
+                        font-size: 16px;
+                        font-weight: bold;
+                    }
+                }
+                
+            }
+            ul {
+                line-height: 40px;
+                li:first-child{
+                    color: white;
+                    font-size: 16px;
+                    font-weight: bold;
+                }
+                li{
+                    color: var(--footerTextColor);
+                    list-style: none;
+                    font-weight: normal;
+                }
+            }
+        }
+    }
+    &__last{
+        &--content{
+            display: flex;
+            gap: 12px;
+            font-size: 16px;
+            &.left{
+                padding: 2% 10%;
+            }
+            &.right{
+                padding: 2% 2%;
+                gap: 10px;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                .icon{
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+
+}

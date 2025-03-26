@@ -1,0 +1,38 @@
+{
+  "homepage-header": {
+    "explore": "Danh mục",
+    "search": "Tìm kiếm...",
+    "login": "Đăng nhập",
+    "signIn": "Đăng ký",
+    "cart": {
+      "cartInfoEmpty": "Giỏ hàng của bạn đang rỗng",
+      "cartInfoEmptyMes": "Tiếp tục mua sắm"
+    },
+    "wishlist": {
+      "wishlistInfoEmpty": "Danh sách yêu thích của bạn đang rỗng",
+      "wishlistInfoEmptyMes": "Khám phá các khóa học"
+    },
+    "notification": {
+      "title": "Thông báo",
+      "empty": "Không có thông báo"
+    },
+    "language": {
+    "vi": "Tiếng Việt",
+    "en": "Tiếng Anh"
+    },
+    "myLearning": "Khóa học của tôi"
+  },
+  "userAccount": {
+    "myLearning": "Khóa học của tôi",
+    "myCart": "Giỏ hàng của tôi",
+    "wishlist": "Danh sách yêu thích",
+    "notifications": "Thông báo",
+    "accountSetting": "Thiết lập tài khoản",
+    "purchaseHistory": "Lịch sử mua hàng",
+    "language": "Ngôn ngữ",
+    "publicProfile": "Thông tin cá nhân đang công khai",
+    "editProfile": "Chỉnh sửa thông tin cá nhân",
+    "logout": "Đăng xuất"
+  }
+  
+}

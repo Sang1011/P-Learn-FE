@@ -1,0 +1,37 @@
+{
+  "homepage-header": {
+    "explore": "Explore",
+    "search": "Search...",
+    "login": "Log in",
+    "signIn": "Sign In",
+    "cart": {
+      "cartInfoEmpty": "Your cart is Empty",
+      "cartInfoEmptyMes": "Keep shopping"
+    },
+    "wishlist": {
+      "wishlistInfoEmpty": "Your wishlist is Empty",
+      "wishlistInfoEmptyMes": "Explore courses"
+    },
+    "notification": {
+      "title": "Notifications",
+      "empty": "No notifications"
+    },
+    "language": {
+    "vi": "Vietnamese",
+    "en": "English"
+    },
+    "myLearning": "My Learning"
+  },
+  "userAccount": {
+    "myLearning": "My Learning",
+    "myCart": "My cart",
+    "wishlist": "Wishlist",
+    "notifications": "Notifications",
+    "accountSetting": "Account settings",
+    "purchaseHistory": "Purchase history",
+    "language": "Language",
+    "publicProfile": "Public profile",
+    "editProfile": "Edit Profile",
+    "logout": "Logout"
+  }
+}

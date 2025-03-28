@@ -2,10 +2,13 @@
 
 import { Col, Image, Row } from "antd";
 import "./style.scss";
-import { TbWorld } from "react-icons/tb";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
+import { useLanguage } from "@/hooks/useLanguage";
+import { useTranslations } from "next-intl";
 
 export default function Footer() {
+  const {locale} = useLanguage();
+  const t = useTranslations("homepage");
   return (
     <section className="footer">
       <Row className="footer__up">
@@ -20,7 +23,7 @@ export default function Footer() {
         <Col className="footer__down--content A" span={12}>
           <div className="up">
             <Image preview={false} className="img" src="./logoWhite.png" />
-            <h5>F-Learn – Learn fast, remember long</h5>
+            <h5>P-Learn – Learn fast, remember long</h5>
           </div>
           <ul>
             <li>Lorem ipsum dolor sit amet.</li>
@@ -43,7 +46,7 @@ export default function Footer() {
           <h4>© 2025 P-Learn</h4>
         </Col>
         <Col span={6} order={2} className="footer__last--content right">
-            <span>English</span>
+            <span>{t(`language.${locale}`)}</span>
             <span className="icon">
               <LanguageSwitcher/>
             </span>

@@ -1,3 +1,5 @@
+"use client";
+
 import { ButtonProps } from "antd";
 import { StyledButton } from "./styledButton";
 

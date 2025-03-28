@@ -1,0 +1,15 @@
+.sider {
+    min-height: 400px;
+    transition: width 0.3s ease;
+    width: var(--sider-width);
+
+    &.collapsed {
+      width: var(--sider-width-collapsed);
+    }
+    .menu {
+        
+    }
+    .ant-menu{
+        height: 100%;
+    }
+}

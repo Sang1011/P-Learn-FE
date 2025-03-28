@@ -1,0 +1,24 @@
+.layout {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    transition: ease-in-out 0.5s;
+    &.mainlayout__body {
+        background-color: var(--whiteColor);
+        transition: width 0.3s ease;
+        margin-top: 90px;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        overflow: hidden;
+        .content {
+          flex-grow: 1;
+          height: 100%;
+          width: calc(100% - var(--sider-width));
+      
+          .sider.collapsed + & {
+            width: calc(100% - var(--sider-width-collapsed));
+          }
+        }
+      }
+}

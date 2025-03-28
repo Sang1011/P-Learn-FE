@@ -1,6 +1,6 @@
 "use client";
 
-import { Dropdown, Image, MenuProps, Space, Input, Row, Col } from "antd";
+import { Dropdown, Image, MenuProps, Input, Row, Col } from "antd";
 import FButton from "@/components/basicUI/FButton";
 import "./style.scss";
 import CartDropdown from "@/components/CartDropDown";
@@ -14,7 +14,7 @@ const { Search } = Input;
 
 function HeaderDesktop() {
   const isLogin = true;
-  const t = useTranslations("homepage-header");
+  const t = useTranslations("homepage");
 
   const itemsForExplore: MenuProps["items"] = [
     {

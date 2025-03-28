@@ -1,4 +1,5 @@
 import FButton from "@/components/basicUI/FButton";
+import { useLanguage } from "@/hooks/useLanguage";
 import { Dropdown, MenuProps } from "antd";
 import { useTranslations } from "next-intl";
 import { HiUserCircle } from "react-icons/hi2";
@@ -6,6 +7,7 @@ import { TbWorld } from "react-icons/tb";
 
 const AccountDropdown = () => {
   const t = useTranslations("userAccount");
+  const {locale} = useLanguage();
   const items: MenuProps["items"] = [
     {
       key: "profile",
@@ -107,8 +109,8 @@ const AccountDropdown = () => {
               alignItems: "center",
             }}
           >
-            <span style={{ fontSize: 16, color: "var(--textColor)" }}>
-              English
+            <span style={{ fontSize: 14, color: "var(--textColor)" }}>
+              {t(`locale.${locale}`)}
             </span>
             <span
               style={{

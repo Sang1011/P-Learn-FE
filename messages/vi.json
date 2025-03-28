@@ -1,5 +1,5 @@
 {
-  "homepage-header": {
+  "homepage": {
     "explore": "Danh mục",
     "search": "Tìm kiếm...",
     "login": "Đăng nhập",
@@ -30,9 +30,33 @@
     "accountSetting": "Thiết lập tài khoản",
     "purchaseHistory": "Lịch sử mua hàng",
     "language": "Ngôn ngữ",
+    "locale": {
+      "vi": "Tiếng Việt",
+      "en": "Tiếng Anh"
+    },
     "publicProfile": "Thông tin cá nhân đang công khai",
     "editProfile": "Chỉnh sửa thông tin cá nhân",
     "logout": "Đăng xuất"
+  },
+  "navigation": {
+    "homepage": "Trang chủ",
+    "blog": "Bài viết"
+  },
+  "carousel": {
+    "banner1": {
+      "title": "Học Tập Mọi Lúc, Mọi Nơi!",
+      "content": "Tiếp cận khoá học chất lượng từ bất kỳ đâu. Học nhanh, hiệu quả, phù hợp với mọi trình độ!",
+      "button": "Xem khóa học"
+    },
+    "banner2": {
+      "title": "Cộng Đồng Học Tập Sôi Động",
+      "content": "Kết nối với giảng viên và học viên trên toàn thế giới. Học tập cùng nhau, phát triển không ngừng!",
+      "button": "Tham gia group discord"
+    },
+    "banner3": {
+      "title": "Chứng Chỉ Giá Trị, Cơ Hội Nghề Nghiệp",
+      "content": "Hoàn thành khoá học và nhận chứng chỉ uy tín. Sẵn sàng cho tương lai sự nghiệp rực rỡ!",
+      "button": "Xem thành quả"
+    }
   }
-  
 }

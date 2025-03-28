@@ -12,6 +12,8 @@
   --mainColorLighterMore: #339966;
   --footerBgColor: #181821;
   --footerTextColor: #979FA7;
+  --sider-width: 256px;
+  --sider-width-collapsed: 80px;
 }
 
 * {

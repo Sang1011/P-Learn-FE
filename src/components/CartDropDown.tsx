@@ -18,7 +18,7 @@ interface listItem {
 
 
 const CartDropdown = ({ cartItems }: listItem) => {
-  const t = useTranslations("homepage-header");
+  const t = useTranslations("homepage");
   const hasItems = cartItems && cartItems.length > 0;
 
   const itemsForCart = cartItems.map((item: item) => ({

@@ -18,7 +18,7 @@ interface listItem {
 
 
 const WishlistDropDown = ({ wishlist }: listItem) => {
-  const t = useTranslations("homepage-header")
+  const t = useTranslations("homepage")
   const hasItems = wishlist && wishlist.length > 0;
 
   const itemsForCart = wishlist.map((item: item) => ({

@@ -6,8 +6,9 @@ import HeaderMobile from "./HeaderMobile";
 
 
 function Header() {
-  const screens = useBreakpoint();
-  return screens === "lg" || screens === "xl" ? <HeaderDesktop /> : <HeaderMobile />;
+  // const screens = useBreakpoint();
+  // return screens === "lg" || screens === "xl" ? <HeaderDesktop /> : <HeaderMobile />;
+  return <HeaderDesktop/>
 }
 
 export default Header;

@@ -1,5 +1,5 @@
 {
-  "homepage-header": {
+  "homepage": {
     "explore": "Explore",
     "search": "Search...",
     "login": "Log in",
@@ -30,8 +30,33 @@
     "accountSetting": "Account settings",
     "purchaseHistory": "Purchase history",
     "language": "Language",
+    "locale": {
+      "vi": "Vietnamese",
+      "en": "English"
+    },
     "publicProfile": "Public profile",
     "editProfile": "Edit Profile",
     "logout": "Logout"
+  },
+  "navigation": {
+    "homepage": "Home",
+    "blog": "Blogs"
+  },
+  "carousel": {
+    "banner1": {
+      "title": "Learn Anytime, Anywhere!",
+      "content": "Access high-quality courses from anywhere. Learn faster, more effectively, at any level!",
+      "button": "Browse courses"
+    },
+    "banner2": {
+      "title": "A Vibrant Learning Community",
+      "content": "Connect with instructors and learners worldwide. Learn together, grow continuously!",
+      "button": "Join the discord group"
+    },
+    "banner3": {
+      "title": "Valuable Certificates, Career Opportunities",
+      "content": "Complete courses and earn recognized certificates. Get ready for a bright career future!",
+      "button": "See the results"
+    }
   }
 }

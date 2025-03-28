@@ -1,9 +1,8 @@
-import "../globals.css";
-import "antd/dist/reset.css";
-import {NextIntlClientProvider, hasLocale} from 'next-intl';
-import {routing} from '@/i18n/routing';
-import { cookies, headers } from "next/headers";
 import LocaleSync from "@/components/LocalSync";
+import "antd/dist/reset.css";
+import { NextIntlClientProvider } from 'next-intl';
+import "../globals.css";
+import RenderLayout from "@/components/layout";
  
 export default async function LocaleLayout({
   children,
@@ -12,7 +11,7 @@ export default async function LocaleLayout({
   children: React.ReactNode;
   params: Promise<{locale: string}>;
 }) {
-  const {locale} = await params;
+  const { locale } = await params;
 
   return (
     <html lang={locale}>
@@ -27,8 +26,8 @@ export default async function LocaleLayout({
       <body>
         <NextIntlClientProvider>
           <LocaleSync/>
-          {children}
-          </NextIntlClientProvider>
+          <RenderLayout>{children}</RenderLayout>
+        </NextIntlClientProvider>
       </body>
     </html>
   );

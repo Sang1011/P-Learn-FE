@@ -1,6 +1,9 @@
-import LanguageSwitcher from "@/components/LanguageSwitcher";
+"use client"
 
-export default function AboutPage() {
+import LanguageSwitcher from "@/components/LanguageSwitcher";
+import withLoading from "@/hoc/withLoading";
+
+function AboutPage() {
     return (
       <div>
         <h1>About Page</h1>
@@ -9,4 +12,6 @@ export default function AboutPage() {
       </div>
     );
   }
+
+export default withLoading(AboutPage);
   

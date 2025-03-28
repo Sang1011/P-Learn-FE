@@ -16,7 +16,7 @@ interface listNoti {
 }
 
 const NotifyDropDown = ({ notiList }: listNoti) => {
-  const t = useTranslations("homepage-header");
+  const t = useTranslations("homepage");
   const hasItems = notiList && notiList.length > 0;
 
   const itemsForCart = notiList.map((item: notify) => ({

@@ -3,7 +3,7 @@
   --foreground: #171717;
   --mainColor: #007E3C;
   --whiteColor: #ffffff;
-  --textColor: #3D3D3D;
+  --: #3D3D3D;
   --borderColor: #e8e8ef;
   --mainColorRGBA: rgba(0, 126, 60, 0.2);
   --mainColorDarker: #006633;
@@ -14,6 +14,9 @@
   --footerTextColor: #979FA7;
   --sider-width: 256px;
   --sider-width-collapsed: 80px;
+  --backgroundColorGray: #F7F7F7;
+  --ratingColor: #8B4309;
+  --starColor: #C4710D;
 }
 
 * {

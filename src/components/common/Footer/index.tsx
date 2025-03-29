@@ -14,17 +14,20 @@ export default function Footer() {
       <Row className="footer__up">
         <Col className="footer__up--content" span={24}>
           <h4>Powered by</h4>
-          <Image preview={false} className="img" src="./LogoNext.png" />
-          <Image preview={false} className="img" src="./logoNest.png" />
-          <Image preview={false} className="img" src="./postgree.png" />
+          <Image preview={false} className="img" src="/LogoNext.png" />
+          <Image preview={false} className="img" src="/logoNest.png" />
+          <Image preview={false} className="img" src="/postgree.png" />
         </Col>
       </Row>
-      <Row className="footer__down">
-        <Col className="footer__down--content A" span={12}>
+      
+        <Row className="footer__logo">
           <div className="up">
-            <Image preview={false} className="img" src="./logoWhite.png" />
+            <Image preview={false} className="img" src="/logoWhite.png" />
             <h5>P-Learn – Learn fast, remember long</h5>
           </div>
+        </Row>
+        <Row className="footer__down">
+        <Col className="footer__down--content A" span={12}>
           <ul>
             <li>Lorem ipsum dolor sit amet.</li>
             <li>Lorem ipsum dolor sit amet.</li>

@@ -6,6 +6,7 @@ import MySider from "@/components/common/Sider";
 import { Layout } from "antd";
 import "./style.scss";
 import LoadingWrapper from "../common/LoadingWrapper";
+import { useMediaQuery } from "react-responsive";
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -14,6 +15,7 @@ interface LayoutProps {
 
 export default function RenderLayout({ children, role = "USER" }: LayoutProps) {
   const [loading, setLoading] = useState(true);
+  const isMobile = useMediaQuery({ maxWidth: 1024 });
 
   useEffect(() => {
     const timer = setTimeout(() => setLoading(false), 500);
@@ -26,7 +28,7 @@ export default function RenderLayout({ children, role = "USER" }: LayoutProps) {
     <Layout className={`layout mainlayout ${loading ? "" : "loaded"}`}>
       <Header />
       <section className="layout mainlayout__body">
-        <MySider />
+        {isMobile ? <></> :<MySider />}
         <main className="content">{children}</main>
       </section>
       <Footer />

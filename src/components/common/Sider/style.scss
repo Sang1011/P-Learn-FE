@@ -1,13 +1,10 @@
 .sider {
     min-height: 400px;
+    max-height: 100%;
     transition: width 0.3s ease;
     width: var(--sider-width);
-
     &.collapsed {
       width: var(--sider-width-collapsed);
-    }
-    .menu {
-        
     }
     .ant-menu{
         height: 100%;

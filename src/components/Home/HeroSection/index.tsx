@@ -17,7 +17,7 @@ export default function HeroSection() {
           fontSize={30}
           onClick={() => carouselRef.current?.prev()}
         />
-        <Carousel ref={carouselRef} dots={true}>
+        <Carousel ref={carouselRef} swipeToSlide autoplay dots={true}>
         <div className="banner my-custom-row banner1">
               <div className="banner__wrapper"> 
               <div className="banner__wrapper--content">
@@ -28,7 +28,7 @@ export default function HeroSection() {
                 <Button className="button">{t("banner1.button")}</Button>
               </div>
               <div className="banner__wrapper--image">
-                <Image preview={false} width={500} height={300} src="./heroBanner1.png"/>
+                <Image preview={false} width={500} height={300} src="/heroBanner1.png"/>
               </div>
               </div>
           </div>
@@ -42,7 +42,7 @@ export default function HeroSection() {
                 <Button className="button">{t("banner2.button")}</Button>
               </div>
               <div className="banner__wrapper--image">
-                <Image preview={false} width={500} height={300} src="./heroBanner2.png"/>
+                <Image preview={false} width={500} height={300} src="/heroBanner2.png"/>
               </div>
               </div>
           </div>
@@ -56,7 +56,7 @@ export default function HeroSection() {
                 <Button className="button">{t("banner3.button")}</Button>
               </div>
               <div className="banner__wrapper--image">
-                <Image preview={false} width={500} height={300} src="./heroBanner3.png"/>
+                <Image preview={false} width={500} height={300} src="/heroBanner3.png"/>
               </div>
               </div>
           </div>

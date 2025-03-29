@@ -140,8 +140,8 @@
     background-color: white;
     border: 1px solid #ddd;
     width: 30px;
+    height: 30px;
     position: relative;
-    // position: absolute;
     z-index: 10;
     cursor: pointer;
 
@@ -157,6 +157,11 @@
 
     &:hover {
       scale: 1.1;
+    }
+  }
+  @media (max-width: 1023px) {
+    .icon {
+      display: none;
     }
   }
 }

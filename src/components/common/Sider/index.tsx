@@ -1,22 +1,27 @@
 "use client"
-import React, { useState, memo } from "react";
-import { usePathname } from "next/navigation"; // 🚀 Lấy URL hiện tại
+import React, { useState, memo, useEffect, useTransition } from "react";
+import { usePathname, useRouter } from "next/navigation"; 
 import { Menu } from "antd";
 import Link from "next/link";
 import { FaHome } from "react-icons/fa";
 import { HiNewspaper } from "react-icons/hi2";
-import { IoIosSettings } from "react-icons/io";
 import { MdChromeReaderMode } from "react-icons/md";
 import { MenuFoldOutlined, MenuUnfoldOutlined } from "@ant-design/icons";
 import "./style.scss";
 
 const Sider = () => {
-  const pathname = usePathname(); // 🛑 Lấy URL hiện tại
+  const pathname = usePathname(); 
   const [collapsed, setCollapsed] = useState(true);
+  const [currentPage, setCurrentPage] = useState("");
+  // const [isPending, startTransition] = useTransition();
+  const router = useRouter();
+
+  useEffect(() => {
+    setCurrentPage(getCleanPath(pathname));
+  }, [pathname])
 
   const handleToggleMenu = () => setCollapsed((prev) => !prev);
 
-  // ✅ Tách phần language khỏi pathname
   const getCleanPath = (path: string) => {
     const segments = path.split("/").filter(Boolean); 
     if (["vi", "en"].includes(segments[0])) {
@@ -32,21 +37,19 @@ const Sider = () => {
       key: "/",
       icon: <FaHome />,
       label: <Link href="/">Home</Link>,
+      disabled: currentPage === "/" 
     },
     {
       key: "/about",
       icon: <MdChromeReaderMode />,
       label: <Link href="/about">About</Link>,
+      disabled: currentPage === "/about"
     },
     {
       key: "/blog",
       icon: <HiNewspaper />,
       label: <Link href="/blog">Blogs</Link>,
-    },
-    {
-      key: "/settings",
-      icon: <IoIosSettings />,
-      label: <Link href="/settings">Settings</Link>,
+      disabled: currentPage === "/blog"
     },
     {
       key: "toggle",

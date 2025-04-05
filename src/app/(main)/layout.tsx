@@ -5,7 +5,7 @@ import Header from "@/components/common/Header";
 import MySider from "@/components/common/Sider";
 import { Layout } from "antd";
 import "./style.scss";
-import LoadingWrapper from "../common/LoadingWrapper";
+import LoadingWrapper from "@/components/common/LoadingWrapper";
 import { useMediaQuery } from "react-responsive";
 
 interface LayoutProps {

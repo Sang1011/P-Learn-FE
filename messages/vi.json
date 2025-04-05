@@ -40,7 +40,12 @@
   },
   "navigation": {
     "homepage": "Trang chủ",
-    "blog": "Bài viết"
+    "blog": "Bài viết",
+    "about": "Trang giới thiệu",
+    "pages": "Trang chính",
+    "contact": "Liên hệ",
+    "github": "Link GiHub",
+    "email": "Email nhóm"
   },
   "carousel": {
     "banner1": {

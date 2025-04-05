@@ -17,7 +17,7 @@
       "empty": "No notifications"
     },
     "language": {
-    "vi": "Vietnamese",
+    "vi": "Tiếng Việt",
     "en": "English"
     },
     "myLearning": "My Learning"
@@ -40,7 +40,12 @@
   },
   "navigation": {
     "homepage": "Home",
-    "blog": "Blogs"
+    "blog": "Blogs",
+    "about": "About",
+    "pages": "Pages",
+    "contact": "Contact",
+    "github": "GitHub Repo",
+    "email": "Group email"
   },
   "carousel": {
     "banner1": {

@@ -8,5 +8,11 @@
     }
     .ant-menu{
         height: 100%;
+        .ant-menu-item-disabled {
+          color: #fff !important;
+          background-color: #1677ff !important;
+          pointer-events: none; // vẫn disabled
+          cursor: default !important;
+        }
     }
 }

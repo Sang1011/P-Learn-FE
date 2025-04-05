@@ -1,5 +1,5 @@
 "use client"
-import React, { useState, memo, useEffect, useTransition } from "react";
+import React, { useState, memo, useEffect } from "react";
 import { usePathname, useRouter } from "next/navigation"; 
 import { Menu } from "antd";
 import Link from "next/link";
@@ -13,24 +13,17 @@ const Sider = () => {
   const pathname = usePathname(); 
   const [collapsed, setCollapsed] = useState(true);
   const [currentPage, setCurrentPage] = useState("");
-  // const [isPending, startTransition] = useTransition();
   const router = useRouter();
 
   useEffect(() => {
-    setCurrentPage(getCleanPath(pathname));
+    setCurrentPage(pathname);
   }, [pathname])
 
   const handleToggleMenu = () => setCollapsed((prev) => !prev);
 
-  const getCleanPath = (path: string) => {
-    const segments = path.split("/").filter(Boolean); 
-    if (["vi", "en"].includes(segments[0])) {
-      return `/${segments.slice(1).join("/")}`; 
-    }
-    return path;
-  };
+  
 
-  const activeKey = getCleanPath(pathname);
+  const activeKey = pathname;
 
   const items = [
     {

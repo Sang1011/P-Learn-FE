@@ -1,3 +1,4 @@
+"use client"
 import FButton from "@/components/basicUI/FButton";
 import { useLanguage } from "@/hooks/useLanguage";
 import { Dropdown, MenuProps } from "antd";
@@ -7,7 +8,7 @@ import { TbWorld } from "react-icons/tb";
 
 const AccountDropdown = () => {
   const t = useTranslations("userAccount");
-  const {locale} = useLanguage();
+  const {language} = useLanguage();
   const items: MenuProps["items"] = [
     {
       key: "profile",
@@ -43,7 +44,7 @@ const AccountDropdown = () => {
         </div>
       ),
     },
-    { type: "divider" },
+    { type: "divider", className: "dividerMenu" },
     {
       key: "my-learning",
       label: <h4 style={{ margin: 0, fontSize: 14 }}>{t("myLearning")}</h4>,
@@ -65,7 +66,7 @@ const AccountDropdown = () => {
         console.log("Go to My Learning");
       },
     },
-    { type: "divider" },
+    { type: "divider", className: "dividerMenu" },
     {
       key: "notifications",
       label: <h4 style={{ margin: 0, fontSize: 14 }}>{t("notifications")}</h4>,
@@ -73,7 +74,7 @@ const AccountDropdown = () => {
         console.log("Go to My notifications");
       },
     },
-    { type: "divider" },
+    { type: "divider", className: "dividerMenu" },
     {
       key: "my-account-setting",
       label: <h4 style={{ margin: 0, fontSize: 14 }}>{t("accountSetting")}</h4>,
@@ -88,7 +89,7 @@ const AccountDropdown = () => {
         console.log("Go to My purchase history");
       },
     },
-    { type: "divider" },
+    { type: "divider", className: "dividerMenu" },
     {
       key: "language",
       label: (
@@ -110,7 +111,7 @@ const AccountDropdown = () => {
             }}
           >
             <span style={{ fontSize: 14, color: "var(--textColor)" }}>
-              {t(`locale.${locale}`)}
+              {t(`locale.${language}`)}
             </span>
             <span
               style={{
@@ -128,7 +129,7 @@ const AccountDropdown = () => {
         console.log("Change language!");
       },
     },
-    { type: "divider" },
+    { type: "divider", className: "dividerMenu" },
     {
       key: "public-profile",
       label: <h4 style={{ margin: 0, fontSize: 14 }}>{t("publicProfile")}</h4>,
@@ -143,7 +144,7 @@ const AccountDropdown = () => {
         console.log("Go to edit profile");
       },
     },
-    { type: "divider" },
+    { type: "divider", className: "dividerMenu" },
     {
       key: "logout",
       label: <h4 style={{ margin: 0, fontSize: 14 }}>{t("logout")}</h4>,

@@ -7,7 +7,7 @@ const LoadingWrapper = () => {
   const pathname = usePathname(); 
 
   useEffect(() => {
-    const timer = setTimeout(() => 2000);
+    const timer = setTimeout(() => {}, 2000);;
     return () => clearTimeout(timer);
   }, [pathname]);
 

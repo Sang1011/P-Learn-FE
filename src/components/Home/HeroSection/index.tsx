@@ -28,7 +28,7 @@ export default function HeroSection() {
                 <Button className="button">{t("banner1.button")}</Button>
               </div>
               <div className="banner__wrapper--image">
-                <Image preview={false} width={500} height={300} src="/heroBanner1.png"/>
+                <Image preview={false} width={500} height={300} src="/images/heroBanner1.png"/>
               </div>
               </div>
           </div>
@@ -42,7 +42,7 @@ export default function HeroSection() {
                 <Button className="button">{t("banner2.button")}</Button>
               </div>
               <div className="banner__wrapper--image">
-                <Image preview={false} width={500} height={300} src="/heroBanner2.png"/>
+                <Image preview={false} width={500} height={300} src="/images/heroBanner2.png"/>
               </div>
               </div>
           </div>
@@ -56,7 +56,7 @@ export default function HeroSection() {
                 <Button className="button">{t("banner3.button")}</Button>
               </div>
               <div className="banner__wrapper--image">
-                <Image preview={false} width={500} height={300} src="/heroBanner3.png"/>
+                <Image preview={false} width={500} height={300} src="/images/heroBanner3.png"/>
               </div>
               </div>
           </div>

@@ -41,7 +41,7 @@ function HeaderDesktop() {
       <Row align="middle" className="header-row">
         {/* LEFT: Logo + Dropdown */}
         <Col xs={4} sm={4} md={4} lg={3} className="header-left">
-          <Image width={80} height={80} className="logo" src="/logo.png" preview={false} />
+          <Image width={80} height={80} className="logo" src="/images/logo.png" preview={false} />
           <Dropdown className="dropdown" menu={{ items: itemsForExplore }}>
             <FButton className="dropdown__buttonEx" type="text">
                 <h4 style={{ margin: 0, textAlign: "center", lineHeight: "1" }}>{t("explore")}</h4>

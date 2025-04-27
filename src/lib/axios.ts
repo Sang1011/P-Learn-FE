@@ -29,7 +29,7 @@ api.interceptors.request.use(
             clearTokens();
           } else {
             try {
-              const { newToken, newRefreshToken} = await refreshAccessToken(refreshToken);
+              const { newToken, newRefreshToken } = await refreshAccessToken(refreshToken);
               Cookies.set("token", newToken);
               Cookies.set("refreshToken", newRefreshToken);
             } catch (error) {
@@ -40,14 +40,17 @@ api.interceptors.request.use(
           clearTokens();
         }
       }
+      if (token && config.headers) {
+        config.headers.Authorization = `Bearer ${token}`;
+      }
     }
-
     return config;
   },
   function (error) {
     return Promise.reject(error);
   }
 );
+
 
 async function refreshAccessToken(refreshToken: string) {
   try {

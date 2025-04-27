@@ -1,5 +1,6 @@
-import { login } from '@/services/userApi';
+// userThunk.ts
 import { createAsyncThunk } from '@reduxjs/toolkit';
+import { login } from '@/services/userApi';
 
 interface LoginResponse {
   token: string;
@@ -9,10 +10,15 @@ interface LoginResponse {
   };
 }
 
-export const loginAsync = createAsyncThunk(
+export const loginAsync = createAsyncThunk<LoginResponse, { username: string; password: string }, { rejectValue: { error: string } }>(
   'user/loginAsync',
-  async (credentials: { username: string; password: string }) : Promise<LoginResponse> => {
-    const response = await login(credentials);
-    return response.data;
+  async (credentials, { rejectWithValue }) => {
+    try {
+      const response = await login(credentials);
+      return response.data; 
+    } catch (error: any) {
+      return rejectWithValue({ error: 'Đăng nhập thất bại. Vui lòng thử lại.' });
+    }
   }
 );
+

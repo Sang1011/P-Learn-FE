@@ -20,6 +20,7 @@
     "vi": "Tiếng Việt",
     "en": "Tiếng Anh"
     },
+    "locale": "Tiếng Việt",
     "myLearning": "Khóa học của tôi"
   },
   "userAccount": {
@@ -30,10 +31,7 @@
     "accountSetting": "Thiết lập tài khoản",
     "purchaseHistory": "Lịch sử mua hàng",
     "language": "Ngôn ngữ",
-    "locale": {
-      "vi": "Tiếng Việt",
-      "en": "Tiếng Anh"
-    },
+    "locale": "Tiếng Việt",
     "publicProfile": "Thông tin cá nhân đang công khai",
     "editProfile": "Chỉnh sửa thông tin cá nhân",
     "logout": "Đăng xuất"

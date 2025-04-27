@@ -11,9 +11,12 @@ export function useLanguage() {
   function changeLanguage(lang: string) {
     if (language !== lang) {
       Cookies.set("language", lang, { expires: 30 });
-      setLanguage(lang);
-      router.refresh(); // Cập nhật lại UI khi đổi ngôn ngữ
+      // Cập nhật lại UI khi đổi ngôn ngữ
+      setTimeout(() => {
+        router.refresh(); // Đợi 1 nhịp rồi refresh lại page
+      }, 100);
       console.log("Language changed to:", lang);
+      setLanguage(lang);
     }
   }
 

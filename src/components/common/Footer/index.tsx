@@ -49,7 +49,7 @@ export default function Footer() {
           <h4>© 2025 P-Learn. All rights reserved.</h4>
         </Col>
         <Col span={6} order={2} className="footer__last--content right">
-            <span>{t(`language.${language}`)}</span>
+            <span>{t(`locale`)}</span>
             <span className="icon">
               <LanguageSwitcher/>
             </span>

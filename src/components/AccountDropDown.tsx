@@ -8,7 +8,6 @@ import { TbWorld } from "react-icons/tb";
 
 const AccountDropdown = () => {
   const t = useTranslations("userAccount");
-  const {language} = useLanguage();
   const items: MenuProps["items"] = [
     {
       key: "profile",
@@ -111,7 +110,7 @@ const AccountDropdown = () => {
             }}
           >
             <span style={{ fontSize: 14, color: "var(--textColor)" }}>
-              {t(`locale.${language}`)}
+              {t(`locale`)}
             </span>
             <span
               style={{

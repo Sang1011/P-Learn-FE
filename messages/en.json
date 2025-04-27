@@ -17,9 +17,10 @@
       "empty": "No notifications"
     },
     "language": {
-    "vi": "Tiếng Việt",
+    "vi": "Vietnamese",
     "en": "English"
     },
+    "locale": "English",
     "myLearning": "My Learning"
   },
   "userAccount": {
@@ -30,10 +31,7 @@
     "accountSetting": "Account settings",
     "purchaseHistory": "Purchase history",
     "language": "Language",
-    "locale": {
-      "vi": "Vietnamese",
-      "en": "English"
-    },
+    "locale": "English",
     "publicProfile": "Public profile",
     "editProfile": "Edit Profile",
     "logout": "Logout"

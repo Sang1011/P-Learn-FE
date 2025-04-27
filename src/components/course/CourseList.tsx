@@ -4,7 +4,7 @@ import Course from "./Course";
 export default function CourseList () {
     const list = [
         {
-            image: "/courseImage.png",
+            image: "/images/courseImage.png",
             title: "React - The Complete Guide 2025 (incl. Next.js, Redux)",
             author: "Rachel Thompson",
             rating: 5,
@@ -12,7 +12,7 @@ export default function CourseList () {
             price: "Free"
         },
         {
-            image: "/courseImage.png",
+            image: "/images/courseImage.png",
             title: "React - The Complete Guide 2025 (incl. Next.js, Redux)",
             author: "Rachel Thompson",
             rating: 4.8,
@@ -20,7 +20,7 @@ export default function CourseList () {
             price: "86$"
         },
         {
-            image: "/courseImage.png",
+            image: "/images/courseImage.png",
             title: "React - The Complete Guide 2025 (incl. Next.js, Redux)",
             author: "Rachel Thompson",
             rating: 2,
@@ -28,7 +28,7 @@ export default function CourseList () {
             price: "33$"
         },
         {
-            image: "/courseImage.png",
+            image: "/images/courseImage.png",
             title: "React - The Complete Guide 2025 (incl. Next.js, Redux)",
             author: "Rachel Thompson",
             rating: 3.2,

@@ -11,7 +11,7 @@ interface LoginResponse {
 }
 
 export const loginAsync = createAsyncThunk<LoginResponse, { username: string; password: string }, { rejectValue: { error: string } }>(
-  'user/loginAsync',
+  'auth/login',
   async (credentials, { rejectWithValue }) => {
     try {
       const response = await login(credentials);

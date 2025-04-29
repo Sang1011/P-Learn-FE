@@ -10,7 +10,10 @@ interface UserState {
 
 const initialState: UserState = {
   token: null,
-  user: null,
+  user: {
+    id: "1",
+    username: "hello",
+  },
   isLoading: false,
   error: null,
 };

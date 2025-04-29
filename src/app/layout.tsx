@@ -1,6 +1,7 @@
 import "antd/dist/reset.css";
 import { NextIntlClientProvider } from 'next-intl';
 import "./globals.css";
+import { ReduxProvider } from "@/contexts/ReduxContext";
  
 export default async function LocaleLayout({
   children,
@@ -20,7 +21,9 @@ export default async function LocaleLayout({
       </head>
       <body>
         <NextIntlClientProvider>
-          {children}
+          <ReduxProvider>
+            {children}
+          </ReduxProvider>
         </NextIntlClientProvider>
       </body>
     </html>
